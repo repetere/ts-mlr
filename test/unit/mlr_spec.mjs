@@ -139,4 +139,19 @@ describe('MultipleLinearRegression', function () {
       expect(predictionPromise).to.be.an('object');
     });
   });
+  describe('async calculate', () => {
+    it('should calculate and predict asynchrnously', async function () {
+      const testSqft = DataSet.scalers.get('sqft').scale(1650);
+      const testBedrooms = DataSet.scalers.get('bedrooms').scale(3);
+      const input_x = [
+        testSqft,
+        testBedrooms,
+      ];
+      const scaledPrediction = await trainedMLR.calculate(input_x);
+      const descaledPredictions = scaledPrediction.map(DataSet.scalers.get('price').descale);
+      const prediction = descaledPredictions[ 0 ];
+      expect(trainedMLR.calculate).to.be.a('function');
+      expect(prediction).to.be.closeTo(290000, 10000);
+    });
+  });
 });
