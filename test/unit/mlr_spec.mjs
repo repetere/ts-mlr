@@ -88,7 +88,7 @@ describe('MultipleLinearRegression', function () {
       expect(trainedMLRModel.model).to.be.an('object');
     });
   });
-  describe('predict', () => {
+  describe('calculate', () => {
     it('should return a tensorflow prediction', async function () { 
       const testSqft = DataSet.scalers.get('sqft').scale(1650);
       const testBedrooms = DataSet.scalers.get('bedrooms').scale(3);
@@ -96,7 +96,7 @@ describe('MultipleLinearRegression', function () {
         testSqft,
         testBedrooms,
       ]; // input_x: [ -0.4412732005944351, -0.2236751871685913 ]
-      const predictionPromise = trainedMLR.predict(input_x);
+      const predictionPromise = trainedMLR.calculate(input_x);
       predictionPromise.data()
         .then(predictions => {
           const scaledPrediction = predictions[ 0 ];
@@ -122,7 +122,7 @@ describe('MultipleLinearRegression', function () {
           DataSet.scalers.get('bedrooms').scale(2),
         ], //179900
       ];
-      const predictionPromise = trainedMLR.predict(input_x);
+      const predictionPromise = trainedMLR.calculate(input_x);
       predictionPromise.data()
         .then(predictions => {
           const scaledPrediction = predictions[ 0 ];
@@ -139,7 +139,7 @@ describe('MultipleLinearRegression', function () {
       expect(predictionPromise).to.be.an('object');
     });
   });
-  describe('async calculate', () => {
+  describe('async predict', () => {
     it('should calculate and predict asynchrnously', async function () {
       const testSqft = DataSet.scalers.get('sqft').scale(1650);
       const testBedrooms = DataSet.scalers.get('bedrooms').scale(3);
@@ -147,10 +147,10 @@ describe('MultipleLinearRegression', function () {
         testSqft,
         testBedrooms,
       ];
-      const scaledPrediction = await trainedMLR.calculate(input_x);
+      const scaledPrediction = await trainedMLR.predict(input_x);
       const descaledPredictions = scaledPrediction.map(DataSet.scalers.get('price').descale);
       const prediction = descaledPredictions[ 0 ];
-      expect(trainedMLR.calculate).to.be.a('function');
+      expect(trainedMLR.predict).to.be.a('function');
       expect(prediction).to.be.closeTo(290000, 10000);
     });
   });

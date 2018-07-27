@@ -17,7 +17,7 @@ asynchronously trains tensorflow model, must be implemented by tensorscript clas
 | x_matrix | * |  | independent variables |
 | y_matrix | * |  | dependent variables |
 
-### `predict(matrix: *): Promise`
+### `calculate(matrix: *): Promise`
 
 predicts new dependent variables
 

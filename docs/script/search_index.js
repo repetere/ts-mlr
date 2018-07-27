@@ -12,6 +12,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "lib/mlr.mjs~multiplelinearregression#calculate",
+    "class/lib/mlr.mjs~MultipleLinearRegression.html#instance-method-calculate",
+    "lib/mlr.mjs~MultipleLinearRegression#calculate",
+    "method"
+  ],
+  [
     "lib/mlr.mjs~multiplelinearregression#constructor",
     "class/lib/mlr.mjs~MultipleLinearRegression.html#instance-constructor-constructor",
     "lib/mlr.mjs~MultipleLinearRegression#constructor",
@@ -22,12 +28,6 @@ window.esdocSearchIndex = [
     "class/lib/mlr.mjs~MultipleLinearRegression.html#instance-member-model",
     "lib/mlr.mjs~MultipleLinearRegression#model",
     "member"
-  ],
-  [
-    "lib/mlr.mjs~multiplelinearregression#predict",
-    "class/lib/mlr.mjs~MultipleLinearRegression.html#instance-method-predict",
-    "lib/mlr.mjs~MultipleLinearRegression#predict",
-    "method"
   ],
   [
     "lib/mlr.mjs~multiplelinearregression#train",

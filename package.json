@@ -1,6 +1,6 @@
 {
   "name": "@tensorscript/ts-mlr",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "multiple linear regression with tensorflow",
   "main": "index.mjs",
   "scripts": {
@@ -23,6 +23,14 @@
     "name": "Yaw Etse",
     "url": "https://github.com/yawetse"
   },
+  "keywords": [
+    "regression",
+    "mlr",
+    "multiple linear regression",
+    "tensorflow",
+    "machine learning",
+    "ai"
+  ],
   "homepage": "https://github.com/repetere/ts-mlr#readme",
   "devDependencies": {
     "@std/esm": "^0.26.0",
@@ -49,7 +57,7 @@
     "sinon-chai": "^3.2.0"
   },
   "dependencies": {
-    "@tensorscript/core": "^1.0.5"
+    "@tensorscript/core": "^1.0.7"
   },
   "@std/esm": "cjs",
   "nyc": {

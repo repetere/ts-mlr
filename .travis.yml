@@ -27,7 +27,7 @@ notifications:
     skip_join: false
 
 install:
-  - npm install  mocha nyc -g
+  - npm install  mocha nyc @std/esm -g
   - npm install 
   # - npm install --skip_app_post_install=true
 
