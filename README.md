@@ -3,7 +3,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/repetere/ts-mlr/badge.svg?branch=master)](https://coveralls.io/github/repetere/ts-mlr?branch=master) [![Build Status](https://travis-ci.org/repetere/ts-mlr.svg?branch=master)](https://travis-ci.org/repetere/ts-mlr)
 
 Multiple Linear Regression with Tensorflow
-### [Full Documentation](https://github.com/repetere/@tensorscript/ts-mlr/blob/master/docs/API.md)
+### [Full Documentation](<https://github.com/repetere/ts-mlr/blob/master/docs/API.md>)
 
 ### Installation
 

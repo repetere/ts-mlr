@@ -38,11 +38,11 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { TensorScriptModelInterface, } from &apos;@tensorscript/core&apos;;
 
 /**
- * base class for tensorscript models
- * @interface TensorScriptModelInterface
- * @property {Object} settings - tensorflow model hyperparameters
+ * Mulitple Linear Regression with Tensorflow
+ * @class MultipleLinearRegression
+ * @property {Object} options - tensorflow model hyperparameters
  * @property {Object} model - tensorflow model
- * @property {Object} tf - tensorflow / tensorflow-node / tensorflow-node-gpu
+ * @param {Object} customTF - custom tensorflow module: tensorflow / tensorflow-node / tensorflow-node-gpu
  */
 export class MultipleLinearRegression extends TensorScriptModelInterface {
   constructor(options = {}, customTF) {
@@ -53,7 +53,7 @@ export class MultipleLinearRegression extends TensorScriptModelInterface {
     return this;
   }
   /**
-   * asynchronously trains tensorflow model, must be implemented by tensorscript class
+   * asynchronously trains tensorflow model
    * @param x_matrix - independent variables
    * @param y_matrix - dependent variables
    * @return {Object} returns trained tensorflow model 

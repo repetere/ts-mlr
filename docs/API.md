@@ -2,7 +2,7 @@
 
 ## `MultipleLinearRegression`
 
-base class for tensorscript models
+Mulitple Linear Regression with Tensorflow
 
 ### `constructor()`
 
@@ -10,7 +10,7 @@ base class for tensorscript models
 
 ### `train(x_matrix: *, y_matrix: *): Object`
 
-asynchronously trains tensorflow model, must be implemented by tensorscript class
+asynchronously trains tensorflow model
 
 | Name | Type | Attribute | Description |
 | --- | --- | --- | --- |
