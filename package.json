@@ -4,7 +4,7 @@
   "description": "multiple linear regression with tensorflow",
   "main": "index.mjs",
   "scripts": {
-    "test": "nyc mocha  --require babel-register \"test/**/*.{js,mjs}\"",
+    "test": "nyc mocha  -r @std/esm \"test/**/*.{js,mjs}\"",
     "doc": "esdoc",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/repetere/ts-mlr#readme",
   "devDependencies": {
+    "@std/esm": "^0.26.0",
     "babel-core": "^6.26.3",
     "babel-plugin-istanbul": "^4.1.6",
     "babel-polyfill": "^6.26.0",
@@ -40,12 +41,26 @@
     "esdoc-ecmascript-proposal-plugin": "^1.0.0",
     "esdoc-publish-markdown-plugin": "^1.1.0",
     "esdoc-standard-plugin": "^1.0.0",
+    "esm": "^3.0.72",
     "mocha": "^5.2.0",
+    "modelscript": "^1.4.3",
     "nyc": "^12.0.2",
     "sinon": "^6.1.4",
     "sinon-chai": "^3.2.0"
   },
   "dependencies": {
     "@tensorscript/core": "^1.0.4"
+  },
+  "@std/esm": "cjs",
+  "nyc": {
+    "extension": [
+      ".mjs"
+    ],
+    "include": [
+      "lib/**/*.mjs"
+    ],
+    "require": [
+      "@std/esm"
+    ]
   }
 }

@@ -1,0 +1,38 @@
+window.esdocSearchIndex = [
+  [
+    "@tensorscript/ts-mlr/lib/mlr.mjs~multiplelinearregression",
+    "class/lib/mlr.mjs~MultipleLinearRegression.html",
+    "<span>MultipleLinearRegression</span> <span class=\"search-result-import-path\">@tensorscript/ts-mlr/lib/mlr.mjs</span>",
+    "class"
+  ],
+  [
+    "lib/mlr.mjs",
+    "file/lib/mlr.mjs.html",
+    "lib/mlr.mjs",
+    "file"
+  ],
+  [
+    "lib/mlr.mjs~multiplelinearregression#constructor",
+    "class/lib/mlr.mjs~MultipleLinearRegression.html#instance-constructor-constructor",
+    "lib/mlr.mjs~MultipleLinearRegression#constructor",
+    "method"
+  ],
+  [
+    "lib/mlr.mjs~multiplelinearregression#model",
+    "class/lib/mlr.mjs~MultipleLinearRegression.html#instance-member-model",
+    "lib/mlr.mjs~MultipleLinearRegression#model",
+    "member"
+  ],
+  [
+    "lib/mlr.mjs~multiplelinearregression#predict",
+    "class/lib/mlr.mjs~MultipleLinearRegression.html#instance-method-predict",
+    "lib/mlr.mjs~MultipleLinearRegression#predict",
+    "method"
+  ],
+  [
+    "lib/mlr.mjs~multiplelinearregression#train",
+    "class/lib/mlr.mjs~MultipleLinearRegression.html#instance-method-train",
+    "lib/mlr.mjs~MultipleLinearRegression#train",
+    "method"
+  ]
+]
