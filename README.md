@@ -13,7 +13,7 @@ $ npm i @tensorscript/ts-mlr
 
 ### Usage
 
-Test against the Portland housing price dataset (http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex3/ex3.html)
+Test against the [Portland housing price dataset](http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex3/ex3.html)
 
 ```javascript
 import { MultipleLinearRegression, } from '@tensorscript/ts-mlr';
