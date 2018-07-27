@@ -1,6 +1,6 @@
 {
   "name": "@tensorscript/ts-mlr",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "multiple linear regression with tensorflow",
   "main": "index.mjs",
   "scripts": {
@@ -31,7 +31,7 @@
     "machine learning",
     "ai"
   ],
-  "homepage": "https://github.com/repetere/ts-mlr#readme",
+  "homepage": "https://repetere.github.io/ts-mlr",
   "devDependencies": {
     "@std/esm": "^0.26.0",
     "babel-core": "^6.26.3",

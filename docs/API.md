@@ -4,13 +4,13 @@
 
 Mulitple Linear Regression with Tensorflow
 
-### `constructor()`
+### `constructor(options: Object, customTF: Object)`
 
 ### `model: *`
 
 ### `train(x_matrix: *, y_matrix: *): Object`
 
-asynchronously trains tensorflow model
+Asynchronously trains tensorflow model
 
 | Name | Type | Attribute | Description |
 | --- | --- | --- | --- |
@@ -19,7 +19,7 @@ asynchronously trains tensorflow model
 
 ### `calculate(matrix: *): Promise`
 
-predicts new dependent variables
+Predicts new dependent variables
 
 | Name | Type | Attribute | Description |
 | --- | --- | --- | --- |

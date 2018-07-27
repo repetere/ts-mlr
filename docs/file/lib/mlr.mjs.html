@@ -40,11 +40,13 @@
 /**
  * Mulitple Linear Regression with Tensorflow
  * @class MultipleLinearRegression
- * @property {Object} options - tensorflow model hyperparameters
- * @property {Object} model - tensorflow model
- * @param {Object} customTF - custom tensorflow module: tensorflow / tensorflow-node / tensorflow-node-gpu
+ * @implements {TensorScriptModelInterface}
  */
 export class MultipleLinearRegression extends TensorScriptModelInterface {
+  /**
+   * @param {Object} options - tensorflow model hyperparameters
+   * @param {Object} customTF - custom tensorflow module: tensorflow / tensorflow-node / tensorflow-node-gpu
+   */
   constructor(options = {}, customTF) {
     const config = Object.assign({
       epochs:500,
@@ -53,7 +55,8 @@ export class MultipleLinearRegression extends TensorScriptModelInterface {
     return this;
   }
   /**
-   * asynchronously trains tensorflow model
+   * Asynchronously trains tensorflow model
+   * @override
    * @param x_matrix - independent variables
    * @param y_matrix - dependent variables
    * @return {Object} returns trained tensorflow model 
@@ -76,7 +79,8 @@ export class MultipleLinearRegression extends TensorScriptModelInterface {
     return this.model;
   }
   /**
-   * predicts new dependent variables
+   * Predicts new dependent variables
+   * @override
    * @param matrix - new test independent variables
    * @return {Promise} returns tensorflow prediction 
    */

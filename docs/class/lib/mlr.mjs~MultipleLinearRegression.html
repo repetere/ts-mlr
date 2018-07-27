@@ -35,13 +35,13 @@
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {MultipleLinearRegression} from &apos;<span><a href="file/lib/mlr.mjs.html#lineNumber10">@tensorscript/ts-mlr/lib/mlr.mjs</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {MultipleLinearRegression} from &apos;<span><a href="file/lib/mlr.mjs.html#lineNumber8">@tensorscript/ts-mlr/lib/mlr.mjs</a></span>&apos;</code></pre></div>
   <span data-ice="access">public</span>
   <span data-ice="kind">class</span>
   
   
   
-  <span data-ice="source">| <span><a href="file/lib/mlr.mjs.html#lineNumber10">source</a></span></span>
+  <span data-ice="source">| <span><a href="file/lib/mlr.mjs.html#lineNumber8">source</a></span></span>
 </div>
 
 <div class="self-detail detail">
@@ -54,7 +54,7 @@
   <div class="flat-list" data-ice="extendsChain"><h4>Extends:</h4><div><span>@tensorscript/core~TensorScriptModelInterface</span> &#x2192; MultipleLinearRegression</div></div>
   
   
-  
+  <div class="flat-list" data-ice="implements"><h4>Implements:</h4><ul><li><span>TensorScriptModelInterface</span></li></ul></div>
   
   
   
@@ -94,7 +94,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/lib/mlr.mjs~MultipleLinearRegression.html#instance-constructor-constructor">constructor</a></span></span><span class="code" data-ice="signature">()</span>
+          <span class="code" data-ice="name"><span><a href="class/lib/mlr.mjs~MultipleLinearRegression.html#instance-constructor-constructor">constructor</a></span></span><span class="code" data-ice="signature">(options: <span>Object</span>, customTF: <span>Object</span>)</span>
         </p>
       </div>
       <div>
@@ -170,7 +170,7 @@
       <div>
         
         
-        <div data-ice="description"><p>predicts new dependent variables</p>
+        <div data-ice="description"><p>Predicts new dependent variables</p>
 </div>
       </div>
     </td>
@@ -199,7 +199,7 @@
       <div>
         
         
-        <div data-ice="description"><p>asynchronously trains tensorflow model</p>
+        <div data-ice="description"><p>Asynchronously trains tensorflow model</p>
 </div>
       </div>
     </td>
@@ -226,11 +226,11 @@
     
     
     
-    <span class="code" data-ice="name">constructor</span><span class="code" data-ice="signature">()</span>
+    <span class="code" data-ice="name">constructor</span><span class="code" data-ice="signature">(options: <span>Object</span>, customTF: <span>Object</span>)</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/lib/mlr.mjs.html#lineNumber11">source</a></span></span>
+      <span data-ice="source"><span><a href="file/lib/mlr.mjs.html#lineNumber13">source</a></span></span>
     </span>
   </h3>
 
@@ -241,7 +241,31 @@
 
   
 
-  <div data-ice="properties">
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">options</td>
+      <td data-ice="type" class="code"><span>Object</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>tensorflow model hyperparameters</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">customTF</td>
+      <td data-ice="type" class="code"><span>Object</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>custom tensorflow module: tensorflow / tensorflow-node / tensorflow-node-gpu</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
 </div>
 
   
@@ -276,7 +300,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/lib/mlr.mjs.html#lineNumber30">source</a></span></span>
+      <span data-ice="source"><span><a href="file/lib/mlr.mjs.html#lineNumber33">source</a></span></span>
     </span>
   </h3>
 
@@ -322,14 +346,14 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/lib/mlr.mjs.html#lineNumber46">source</a></span></span>
+      <span data-ice="source"><span><a href="file/lib/mlr.mjs.html#lineNumber50">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>predicts new dependent variables</p>
+  <div data-ice="description"><p>Predicts new dependent variables</p>
 </div>
 
   
@@ -396,14 +420,14 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/lib/mlr.mjs.html#lineNumber24">source</a></span></span>
+      <span data-ice="source"><span><a href="file/lib/mlr.mjs.html#lineNumber27">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>asynchronously trains tensorflow model</p>
+  <div data-ice="description"><p>Asynchronously trains tensorflow model</p>
 </div>
 
   

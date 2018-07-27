@@ -1,14 +1,13 @@
 {
-  "coverage": "60%",
+  "coverage": "80%",
   "expectCount": 5,
-  "actualCount": 3,
+  "actualCount": 4,
   "files": {
     "lib/mlr.mjs": {
       "expectCount": 5,
-      "actualCount": 3,
+      "actualCount": 4,
       "undocumentLines": [
-        11,
-        30
+        33
       ]
     }
   }
