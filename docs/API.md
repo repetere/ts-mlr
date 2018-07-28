@@ -6,23 +6,27 @@ Mulitple Linear Regression with Tensorflow
 
 ### `constructor(options: Object, customTF: Object)`
 
+### `yShape: *`
+
+### `xShape: *`
+
 ### `model: *`
 
-### `train(x_matrix: *, y_matrix: *): Object`
+### `train(x_matrix: Array<Array<number>>, y_matrix: Array<Array<number>>): Object`
 
 Asynchronously trains tensorflow model
 
 | Name | Type | Attribute | Description |
 | --- | --- | --- | --- |
-| x_matrix | * |  | independent variables |
-| y_matrix | * |  | dependent variables |
+| x_matrix | Array<Array<number>> |  | independent variables |
+| y_matrix | Array<Array<number>> |  | dependent variables |
 
-### `calculate(matrix: *): Promise`
+### `calculate(matrix: Array<Array<number>>|Array<number>): {data: Promise}`
 
 Predicts new dependent variables
 
 | Name | Type | Attribute | Description |
 | --- | --- | --- | --- |
-| matrix | * |  | new test independent variables |
+| matrix | Array<Array<number>>|Array<number> |  | new test independent variables |
 
 # Function

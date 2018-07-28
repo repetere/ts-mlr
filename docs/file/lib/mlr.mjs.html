@@ -8,7 +8,7 @@
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
   <script src="script/manual.js"></script>
-<meta name="description" content="multiple linear regression with tensorflow"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@tensorscript/ts-mlr"><meta property="twitter:description" content="multiple linear regression with tensorflow"></head>
+<meta name="description" content="Multiple linear regression with TensorFlow"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@tensorscript/ts-mlr"><meta property="twitter:description" content="Multiple linear regression with TensorFlow"></head>
 <body class="layout-container" data-ice="rootContainer">
 
 <header>
@@ -57,16 +57,17 @@ export class MultipleLinearRegression extends TensorScriptModelInterface {
   /**
    * Asynchronously trains tensorflow model
    * @override
-   * @param x_matrix - independent variables
-   * @param y_matrix - dependent variables
+   * @param {Array&lt;Array&lt;number&gt;&gt;} x_matrix - independent variables
+   * @param {Array&lt;Array&lt;number&gt;&gt;} y_matrix - dependent variables
    * @return {Object} returns trained tensorflow model 
    */
   async train(x_matrix, y_matrix) {
-    // console.log({ x_matrix });
     const xShape = this.getInputShape(x_matrix);
     const yShape = this.getInputShape(y_matrix);
     const xs = this.tf.tensor(x_matrix, xShape);
     const ys = this.tf.tensor(y_matrix, yShape);
+    this.yShape = yShape;
+    this.xShape = xShape;
     this.model = this.tf.sequential();
     this.model.add(this.tf.layers.dense({ units: yShape[1], inputShape: [xShape[1],], }));
     this.model.compile({
@@ -81,8 +82,8 @@ export class MultipleLinearRegression extends TensorScriptModelInterface {
   /**
    * Predicts new dependent variables
    * @override
-   * @param matrix - new test independent variables
-   * @return {Promise} returns tensorflow prediction 
+   * @param {Array&lt;Array&lt;number&gt;&gt;|Array&lt;number&gt;} matrix - new test independent variables
+   * @return {{data: Promise}} returns tensorflow prediction 
    */
   calculate(input_matrix) {
     const predictionInput = (Array.isArray(input_matrix[ 0 ]))

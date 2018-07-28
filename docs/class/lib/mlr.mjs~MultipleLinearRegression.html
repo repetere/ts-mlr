@@ -8,7 +8,7 @@
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
   <script src="script/manual.js"></script>
-<meta name="description" content="multiple linear regression with tensorflow"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@tensorscript/ts-mlr"><meta property="twitter:description" content="multiple linear regression with tensorflow"></head>
+<meta name="description" content="Multiple linear regression with TensorFlow"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@tensorscript/ts-mlr"><meta property="twitter:description" content="Multiple linear regression with TensorFlow"></head>
 <body class="layout-container" data-ice="rootContainer">
 
 <header>
@@ -143,6 +143,62 @@
       
     </td>
   </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/lib/mlr.mjs~MultipleLinearRegression.html#instance-member-xShape">xShape</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/lib/mlr.mjs~MultipleLinearRegression.html#instance-member-yShape">yShape</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
 </tbody>
 </table>
 </div>
@@ -164,7 +220,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/lib/mlr.mjs~MultipleLinearRegression.html#instance-method-calculate">calculate</a></span></span><span class="code" data-ice="signature">(matrix: <span>*</span>): <span>Promise</span></span>
+          <span class="code" data-ice="name"><span><a href="class/lib/mlr.mjs~MultipleLinearRegression.html#instance-method-calculate">calculate</a></span></span><span class="code" data-ice="signature">(matrix: <span>Array</span>&lt;<span>Array</span>&lt;<span>number&gt;</span>&gt;|<span>Array&lt;number</span>&gt;): {data: <span>Promise</span>}</span>
         </p>
       </div>
       <div>
@@ -193,7 +249,7 @@
           
           <span data-ice="async">async</span>
           
-          <span class="code" data-ice="name"><span><a href="class/lib/mlr.mjs~MultipleLinearRegression.html#instance-method-train">train</a></span></span><span class="code" data-ice="signature">(x_matrix: <span>*</span>, y_matrix: <span>*</span>): <span>Object</span></span>
+          <span class="code" data-ice="name"><span><a href="class/lib/mlr.mjs~MultipleLinearRegression.html#instance-method-train">train</a></span></span><span class="code" data-ice="signature">(x_matrix: <span>Array</span>&lt;<span>Array</span>&lt;<span>number</span>&gt;&gt;, y_matrix: <span>Array</span>&lt;<span>Array</span>&lt;<span>number</span>&gt;&gt;): <span>Object</span></span>
         </p>
       </div>
       <div>
@@ -300,7 +356,93 @@
     <span class="right-info">
       
       
+      <span data-ice="source"><span><a href="file/lib/mlr.mjs.html#lineNumber34">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-member-xShape">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">xShape</span>
+    <span class="right-info">
+      
+      
       <span data-ice="source"><span><a href="file/lib/mlr.mjs.html#lineNumber33">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-member-yShape">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">yShape</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/lib/mlr.mjs.html#lineNumber32">source</a></span></span>
     </span>
   </h3>
 
@@ -342,11 +484,11 @@
     
     
     
-    <span class="code" data-ice="name">calculate</span><span class="code" data-ice="signature">(matrix: <span>*</span>): <span>Promise</span></span>
+    <span class="code" data-ice="name">calculate</span><span class="code" data-ice="signature">(matrix: <span>Array</span>&lt;<span>Array</span>&lt;<span>number&gt;</span>&gt;|<span>Array&lt;number</span>&gt;): {data: <span>Promise</span>}</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/lib/mlr.mjs.html#lineNumber50">source</a></span></span>
+      <span data-ice="source"><span><a href="file/lib/mlr.mjs.html#lineNumber51">source</a></span></span>
     </span>
   </h3>
 
@@ -368,7 +510,7 @@
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">matrix</td>
-      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="type" class="code"><span>Array</span>&lt;<span>Array</span>&lt;<span>number&gt;</span>&gt;|<span>Array&lt;number</span>&gt;</td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>new test independent variables</p>
 </td>
@@ -383,7 +525,7 @@
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span>Promise</span></td>
+          <td class="return-type code" data-ice="returnType">{data: <span>Promise</span>}</td>
           <td class="return-desc" data-ice="returnDescription"><p>returns tensorflow prediction</p>
 </td>
         </tr>
@@ -416,7 +558,7 @@
     
     <span data-ice="async">async</span>
     
-    <span class="code" data-ice="name">train</span><span class="code" data-ice="signature">(x_matrix: <span>*</span>, y_matrix: <span>*</span>): <span>Object</span></span>
+    <span class="code" data-ice="name">train</span><span class="code" data-ice="signature">(x_matrix: <span>Array</span>&lt;<span>Array</span>&lt;<span>number</span>&gt;&gt;, y_matrix: <span>Array</span>&lt;<span>Array</span>&lt;<span>number</span>&gt;&gt;): <span>Object</span></span>
     <span class="right-info">
       
       
@@ -442,14 +584,14 @@
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">x_matrix</td>
-      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="type" class="code"><span>Array</span>&lt;<span>Array</span>&lt;<span>number</span>&gt;&gt;</td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>independent variables</p>
 </td>
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">y_matrix</td>
-      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="type" class="code"><span>Array</span>&lt;<span>Array</span>&lt;<span>number</span>&gt;&gt;</td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>dependent variables</p>
 </td>

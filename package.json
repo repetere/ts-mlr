@@ -1,7 +1,8 @@
 {
   "name": "@tensorscript/ts-mlr",
-  "version": "1.0.2",
-  "description": "multiple linear regression with tensorflow",
+  "displayName": "TensorScript Multivariate Linear Regression",
+  "version": "1.0.3",
+  "description": "Multiple linear regression with TensorFlow",
   "main": "index.mjs",
   "scripts": {
     "test": "nyc mocha  -r @std/esm \"test/**/*.{js,mjs}\"",
@@ -57,7 +58,7 @@
     "sinon-chai": "^3.2.0"
   },
   "dependencies": {
-    "@tensorscript/core": "^1.0.7"
+    "@tensorscript/core": "^1.0.9"
   },
   "@std/esm": "cjs",
   "nyc": {

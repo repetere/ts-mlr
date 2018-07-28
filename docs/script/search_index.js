@@ -34,5 +34,17 @@ window.esdocSearchIndex = [
     "class/lib/mlr.mjs~MultipleLinearRegression.html#instance-method-train",
     "lib/mlr.mjs~MultipleLinearRegression#train",
     "method"
+  ],
+  [
+    "lib/mlr.mjs~multiplelinearregression#xshape",
+    "class/lib/mlr.mjs~MultipleLinearRegression.html#instance-member-xShape",
+    "lib/mlr.mjs~MultipleLinearRegression#xShape",
+    "member"
+  ],
+  [
+    "lib/mlr.mjs~multiplelinearregression#yshape",
+    "class/lib/mlr.mjs~MultipleLinearRegression.html#instance-member-yShape",
+    "lib/mlr.mjs~MultipleLinearRegression#yShape",
+    "member"
   ]
 ]
