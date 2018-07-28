@@ -4,7 +4,7 @@
 
 Mulitple Linear Regression with Tensorflow
 
-### `constructor(options: Object, customTF: Object)`
+### `constructor(options: Object, properties: {model:Object,tf:Object,})`
 
 ### `yShape: *`
 

@@ -45,13 +45,13 @@
 export class MultipleLinearRegression extends TensorScriptModelInterface {
   /**
    * @param {Object} options - tensorflow model hyperparameters
-   * @param {Object} customTF - custom tensorflow module: tensorflow / tensorflow-node / tensorflow-node-gpu
+   * @param {{model:Object,tf:Object,}} properties - extra instance properties
    */
-  constructor(options = {}, customTF) {
+  constructor(options = {}, properties = {}) {
     const config = Object.assign({
       epochs:500,
     }, options);
-    super(config, customTF);
+    super(config, properties);
     return this;
   }
   /**

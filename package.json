@@ -1,7 +1,7 @@
 {
   "name": "@tensorscript/ts-mlr",
   "displayName": "TensorScript Multivariate Linear Regression",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Multiple linear regression with TensorFlow",
   "main": "index.mjs",
   "scripts": {
